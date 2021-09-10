@@ -46,7 +46,7 @@ for number in range(1, 20, 2):
     odd_number.append(number)
 
 print(odd_number)
-
+print(odd_number)
 #using list comprehension
 odd_number = [number for number in range(1, 20, 2)]
 print(odd_number)
