@@ -13,7 +13,7 @@ else:
 
 #below - more concise better programming (if the print needs to be changed then it will only take one change instead of three.)
 
-age = 14
+age = 90
 
 if age < 4:
     price = 0
@@ -21,6 +21,10 @@ if age < 4:
 elif age < 18:
     price = 25
 
-else:
+elif age < 65:
     price = 40
+
+elif age >= 65:
+    price = 20
+
 print(f"Your admission cost is ${price}.")
