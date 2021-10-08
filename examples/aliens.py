@@ -40,3 +40,21 @@ if 'guava' in favorite_fruits:
     print("I really love guava.")
 if 'apple' in favorite_fruits:
     print("I love apples.")
+
+
+#simple dictionary
+
+alien_0 = {'color': 'green', 'points': 5}
+
+print(alien_0['color'])
+print(alien_0['points'])
+
+#accessing values in a dictionary 
+
+alien_0 = {'color': 'red', 'points': 10}
+
+new_points = alien_0['points']
+print(f"You just earned {new_points} points!")
+
+
+
