@@ -68,6 +68,34 @@ for name in sorted(favorite_languages.keys()):
     print(f"{name.title()}, thank you for taking the poll!")
 
 
+# looping through all values in a dictionary using value() method
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c#', 
+    'edward': 'ruby', 
+    'phil': 'python',
+    }
+print("The following languages have been mentioned:")
+
+for language in favorite_languages.values():
+    print(language.title())
+
+# using set to loop through values that are unique to avoid repetition on large data sets
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c#', 
+    'edward': 'ruby', 
+    'phil': 'python',
+    }
+
+print("The following languages have been mentioned:")
+
+for language in set(favorite_languages.values()):
+    print(language.title())
+
+
 
 
 
