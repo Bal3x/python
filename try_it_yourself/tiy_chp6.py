@@ -46,4 +46,75 @@ print(f"Dictionaries: \n{word1}")
 print(f"If Statements: \n{word2}")
 print(f"List: \n{word3}")
 
+# looping through a glossary 
+glosary = {
+    'dictionaries': 'Storing key pairs that allow you to connect pieces.',
+    'if_statements': 'Allows you to examine the current state of a program and respond appropriately.',
+    'lists': 'Allow you to store sets of information in one place.',
+    'for loops': 'Allow you to loop through data to test conditions.', 
+    'key' : 'part of the key-value dictionary.',
+    'value': 'value that matches the key in a dictionary.',
+
+    }
+
+print("This are the key items in the glossary:")
+
+for key in glosary.keys():
+    print(key.title())
+
+print("\nThis is the value items in the glossary:")
+
+for value in glosary.values():
+    print(value.title())
+
+# rivers example using items()
+
+rivers = {
+    'nile': 'egypt',
+    'rio grande': 'mexico',
+    'rio piedras': 'puerto rico',
+    'missisippi': 'united states',
     
+    }
+
+for river, country in rivers.items():
+    print(f"The river {river.title()} runs through {country.title()}.")
+
+for river in rivers.keys():
+    print(river.title())
+
+for country in rivers.values():
+    print(country.title())
+
+
+# polling 
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c#', 
+    'edward': 'ruby', 
+    'phil': 'python',
+    'michael': 'java', 
+    'pichael': 'html', 
+    'aurora': 'c++', 
+    }
+
+poll_takers = ['jen', 'sarah', 'edward', 'phil', 'aurora']
+
+for name in favorite_languages.keys():
+
+    if name in poll_takers:
+        language = favorite_languages[name].title()
+        print(f"{name.title()} thanks for taking the poll.")
+    else:
+        print(f"{name.title()} please take the poll.")
+
+
+
+
+
+
+
+
+
+
