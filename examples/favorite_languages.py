@@ -132,3 +132,4 @@ for name, cities in favorite_places.items():
     for city in cities:
         print(f"{city.title()}")
 
+        
