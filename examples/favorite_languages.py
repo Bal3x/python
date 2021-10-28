@@ -96,6 +96,39 @@ for language in set(favorite_languages.values()):
     print(language.title())
 
 
+# looping thru a list inside a dictionary (values from single keys)
 
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c#', 'c++'], 
+    'edward': ['ruby', 'java'], 
+    'phil': ['python', 'c'],
+    }
 
+for name, languages in favorite_languages.items():
+    print(f"\n{name.title()}'s favorite languages are:")
+    
+    for language in languages:
+        print(f"{language.title()}")
+
+# same example but with places to live list inside dicitonaries 
+
+favorite_places = {
+    'kyle': ['boston', 'new york'], 
+    'hanah': ['austin'], 
+    'jake': ['miami', 'chicago'],
+    'chris': [],
+    }
+
+for name, cities in favorite_places.items():
+    
+    if len(cities) == 1:
+        print(f"\n{name.title()}'s favorite place to live is: ")
+    elif len(cities) > 1:
+        print(f"\n{name.title()}'s favorite places to live are: ")
+    else:
+        print(f"\n{name.title()} please tell us what city you would like to live.")
+
+    for city in cities:
+        print(f"{city.title()}")
 
