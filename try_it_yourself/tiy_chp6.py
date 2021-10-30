@@ -111,7 +111,82 @@ for name in favorite_languages.keys():
 
 
 
+# Try it yourself 6-7 
 
+people = {
+    'carla': {
+        'first_name': 'carla', 
+        'last_name': 'dones', 
+        'age': 28, 
+        'city': 'new york',
+        },
+    'jenny': {
+        'first_name': 'jenny',
+        'last_name': 'cueto',
+        'age': 29, 
+        'city': 'new york',
+        },
+    'glory': {
+        'first_name': 'glorilianette',
+        'last_name': 'roldan',
+        'age': 30,
+        'city': 'san juan',
+        },
+    }
+
+for name, person_info in people.items():
+    
+    full_name = f"{person_info['first_name']} {person_info['last_name']}"
+    person_age = f"{person_info['age']}"
+    person_city = f"{person_info['city']}"
+
+    print(f"Name: {full_name.title()}")
+    print(f"\tAge: {person_age.title()}")
+    print(f"\tLocation: {person_city.title()}")
+
+# list of dictionaries 6-8 pets
+
+pet_one = {
+    'animal': 'anaconda',
+    'owner': 'mike',
+    }
+pet_two = {
+    'animal': 'bat',
+    'owner': 'grace',
+    }
+pet_three = {
+    'animal': 'pig',
+    'owner': 'jason',
+    }
+
+pets = [pet_one, pet_two, pet_three]
+
+for pet in pets:
+    print(pet)
+
+
+# favorite places 6-9
+
+favorite_places = {
+    'ivan': ['vienna'],
+    'jacob': ['madrid', 'warsaw', 'venice'],
+    'lisa': ['chicago', 'paris'],
+    'kyle': ['mexico city'],
+    'pedro': [],
+    }
+
+for name, places in favorite_places.items():
+    if len(places) == 1:
+        print(f"{name.title()}'s favorite place is: ")
+    elif len(places) > 1:
+        print(f"{name.title()}'s favorite places are: ")
+    else:
+        print(f"{name.title()} tell us what your favorite places are.")
+    
+    for place in places:
+        print(f"{place.title()}")
+    
+    
 
 
 
