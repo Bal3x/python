@@ -187,9 +187,50 @@ for name, places in favorite_places.items():
         print(f"{place.title()}")
     
     
+# exercise 6-9 favorite numbers
+
+favorite_numbers = {
+    'jazmine': [8, 3],
+    'john': [1],
+    'isabel': [5, 4],
+    'ramon': [7],
+    'leticia':[],
+    }
+for name, numbers in favorite_numbers.items():
+    if len(numbers) == 1:
+        print(f"{name.title()}'s favorite number is: ")
+    elif len(numbers) > 1:
+        print(f"{name.title()}'s favorite numbers are: ")
+    else:
+        print(f"{name.title()} please tell us your favorite numbers.")
+    
+    for number in numbers:
+        print(f"\t{number}")
 
 
+# cities exercise 
 
+cities = {
+    'paris': {
+        'country': 'france',
+        'population': 'five million',
+        'fact': 'eifel tower is located in Paris.'
+        } ,
+    'new york': {
+        'country': 'usa',
+        'population': 'eight million',
+        'fact': 'city that never sleeps',
+        }, 
+    'austin': {
+        'country': 'usa',
+        'population': 'one million',
+        'fact': 'music city',
+        },
+    }
 
-
-
+for city, city_info in cities.items():
+    print(f"{city.title()}:") 
+    print(f"\tCountry: {city_info['country'].title()}")
+    print(f"\tPopulation: {city_info['population'].title()}")
+    print(f"\tFact: {city_info['fact'].title()}")
+    
