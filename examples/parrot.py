@@ -16,4 +16,5 @@ prompt += "\nWhat is your name? "
 name = input(prompt)
 print(f"Hello, {name.title()}!")
 
+jobs = input("How many jobs have you applied?: ") 
 
