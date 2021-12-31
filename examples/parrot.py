@@ -1,20 +1,26 @@
-# how the input() function works
+# Letting the user quit the program
+# Created by bal3x
 
-message = input("Tell me something and I will repeat it back to you: ")
-print(message)
+prompt = "\nTell me anything and I will repeated to you: "
+prompt += "\nEnter 'quit' to end the program. "
 
-# using clear prompts 
+message = ""
 
-name = input("Please enter your name: ")
-print(f"Hello {name.title()}!")
+# while message != 'quit':
+#     message = input(prompt)
+    
+#     if message != 'quit':
+#         print(message)
 
-# when you want to have a longer line
 
-prompt = "If you tell me who you are, I can personalize the messages you see."
-prompt += "\nWhat is your name? "
-
-name = input(prompt)
-print(f"Hello, {name.title()}!")
+# using a flag to determine when to stop a program
+active = True
+while active : 
+    message = input(prompt)
+    if message == 'quit' :
+        active = False
+    else:
+        print(message)
 
 jobs = input("How many jobs have you applied?: ") 
 
