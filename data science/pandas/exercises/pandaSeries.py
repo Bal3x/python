@@ -22,5 +22,5 @@ print(myVar2)
 
 #example: create a series using only data from day1 and day2
 calories = {"day1": 420, "day2": 380, "day3": 390} 
-myVar3 = pd.Series(calories, index = ["day3", "day2"])
+myVar3 = pd.Series(calories, index = ["day1", "day2"])
 print(myVar3)
