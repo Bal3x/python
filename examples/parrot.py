@@ -22,4 +22,5 @@ while active :
     else:
         print(message)
 
+jobs = input("How many jobs have you applied?: ") 
 
