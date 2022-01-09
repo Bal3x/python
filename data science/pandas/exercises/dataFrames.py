@@ -27,6 +27,10 @@ print(df)
 
 print(df.loc["day2"])
 
+#use comma separated files (.csv) pandas is able to read it 
 
+df = pd.read_csv('data.csv')
+
+print(df.to_string())
 
 
