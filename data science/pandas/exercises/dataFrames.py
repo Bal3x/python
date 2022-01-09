@@ -18,6 +18,14 @@ print(df.loc[0])
 print(df.loc[[0, 1]])       # when using [], the result is a pandas Data Frame
 
 # named Indexes
+# with the index argument, you can name your own indexes
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+print(df)
+
+#locate named indexes
+# use the named index in the loc attribute to return the specified rows.
+
+print(df.loc["day2"])
 
 
 
