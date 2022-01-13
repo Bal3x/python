@@ -1,1 +1,1 @@
-This is my python repository where I keep my python crash course exercises and projects!
+This is my python repository where I keep my python crash course and bootcamp exercises and projects!
