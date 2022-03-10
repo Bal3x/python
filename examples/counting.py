@@ -27,10 +27,10 @@ while current_number < 10:
     print(current_number)
 
 # avoiding infinite loops need to have an exit criteria 
-x = 1
-while x <= 5:
-    print(x)
-    x += 1      #exit criteria
+# x = 1
+# while x <= 5:
+#     print(x)
+#     x += 1      #exit criteria
 
 
 

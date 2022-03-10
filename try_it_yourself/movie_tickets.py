@@ -10,20 +10,21 @@ prompt = "\nPlease enter your age to determine your ticket price: "
 
 #variable active
 active = True
+
 #while loop to test conditions
+price = 0
 while active: 
     print(prompt)
     age = int(input())
     if age == 0:
         print("Thank you for your payment!")
-        break
+        active = False
     elif age < 3:
-        price = 0
+        price += 0
     elif age >= 3:
-        price = 10
+        price += 10
         if age > 12:
-            price = 15
-        
+            price += 15
     print(f"The price for your admission is ${price}")
     print("(Enter '0' to pay your ticket when you are done)")
     
