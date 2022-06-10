@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bootcamp",
+    "\\bootcamp\\Day3Project\\Day3Project",
+    "\\bootcamp\\testPython",
+    "\\bootcamp\\testPython\\testPython"
   ],
+  "SelectedNode": "\\bootcamp\\testPython\\testPython.sln",
   "PreviewInSolutionExplorer": false
 }
